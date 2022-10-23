@@ -1,0 +1,250 @@
+:root {
+	--left-bg-color: rgba(87,84,236,0.7);
+	--right-bg-color: rgba(43,43,43,0.8);
+	--hover-width: 75%;
+	--other-width: 25%;
+	--speed: 1000ms;
+}
+
+header {
+	background-color: indigo;
+	color: white;
+	font-family: "Roboto",sans-serif;
+	text-align: center;
+}
+
+#name {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 24px;
+}
+
+nav {
+	overflow: hidden;
+	background-color: DimGray;
+	font-family: "Roboto",sans-serif;
+}
+
+nav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+nav a#home {
+	background-color: indigo;
+	color: white;
+}
+
+body {
+	background-color: #123f6b;
+	font-family: "Roboto", sans-serif;
+	color: white;
+	height: 100vh;
+	overflow: hidden;
+}
+
+table {
+	font-size: 16pt;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	border: 5px;
+	box-shadow: 5px 10px;
+}
+
+form {
+	font-size: 12pt;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	border: 5px;
+}
+
+h1 {
+	font-size: 4rem;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 3%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+
+
+h2 {
+	font-size: 1rem;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	border: 5px;
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: white;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	border: 5px;
+}
+
+table, th, td {
+	border: 1px solid white;
+	border-collapse: collapse;
+	border-radius: 10px;
+	width: 500px;
+	overflow: auto;
+	background-color: transparent;
+	
+}
+
+.container {
+	background-color: #123f6b;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.split {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.split.left {
+	left: 0;
+	background: url("https://images.wallpaperscraft.com/image/single/keyboard_keys_black_208555_1280x720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.split.left::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: var(--left-bg-color);
+}
+
+.split.right {
+	right: 0;
+	background: url("https://cuttingedgegamer.com/wp-content/uploads/Logitech-G513-Carbon-RGB-Gaming-Keyboard-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.split.right::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: var(--right-bg-color);
+}
+
+.split.right, .split.left, .split.right::before, .split.left::before {
+	transition: all var(--speed) ease-in-out;
+}
+
+.hover-left .left {
+	width: var(--hover-width);
+}
+
+.hover-left .right {
+	width: var(--other-width);
+}
+
+.hover-right .right {
+	width: var(--hover-width);
+}
+
+.hover-right .left {
+	width: var(--other-width);
+}
+
+input[type=text] {
+	border-radius: 10px;
+}
+
+input[type=text]:focus, textarea:focus {
+	background-color: lightgray;
+	border: 3px solid #555;
+}
+
+textarea {
+	border-radius: 10px;
+}
+
+input[type=radio] {
+	appearance: none;
+	background-color: #fff;
+	margin: 0;
+	font: "Roboto", sans-serif;
+	color: black;
+	width: 1.15em;
+	height: 1.15em;
+	border: 1px solid black;
+	border-radius: 50%;
+		
+}
+
+input[type=checkbox] {
+	appearance: none;
+	background-color: #fff;
+	margin: 0;
+	font: "Roboto", sans-serif;
+	color: black;
+	width: 1.15em;
+	height: 1.15em;
+	border: 1px solid black;
+	border-radius: 0.15em;
+	transform: translateY(-0.075em);
+}
+
+input[type=radio]:hover, input[type=checkbox]:hover {
+	background-color: lightgray;
+}
+
+input[type=radio]:checked, input[type=checkbox]:checked {
+	background-color: #A95AEC;
+}
+
+input[type=submit] {
+	background-color: indigo;
+	color: white;
+	border: 0;
+	border-radius: 6px;
+	cursor: pointer;
+	font-family: "Roboto", sans-serif;
+	padding: 8px 30px;
+	margin: 5px;
+	font-size: 14px;
+}
+
+input[type=submit]:hover {
+	opacity: 30%;
+}

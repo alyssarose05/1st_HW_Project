@@ -1,0 +1,94 @@
+header {
+	background-color: indigo;
+	color: white;
+	font-family: "Roboto",sans-serif;
+	text-align: center;
+}
+
+#name {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 24px;
+}
+
+nav {
+	overflow: hidden;
+	background-color: DimGray;
+	font-family: "Roboto",sans-serif;
+}
+
+nav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+nav a#pictures {
+	background-color: indigo;
+	color: white;
+}
+
+body {
+	background-color: #123f6b;
+}
+
+body > div {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.container {
+	background-color: #123f6b;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.panel {
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	border-radius: 50px;
+	color: black;
+	cursor: pointer;
+	flex: 0.5;
+	margin: 10px;
+	position: relative;
+	transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+	font-size: 24px;
+	position: absolute;
+	bottom: 20px;
+	left: 200px;
+	margin: 0;
+	opacity: 0;
+}
+
+.panel.active {
+	flex: 5;
+}
+
+.panel.active h3 {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+}

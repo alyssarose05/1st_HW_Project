@@ -1,0 +1,75 @@
+header {
+	background-color: indigo;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+
+#name {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 24px;
+}
+
+nav {
+	overflow: hidden;
+	background-color: DimGray;
+	font-family: "Roboto", sans-serif;
+}
+
+nav a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 25px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+nav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+nav a#descriptions {
+	background-color: indigo;
+	color: white;
+}
+
+body {
+	background-color: #123f6b;
+}
+
+body > div {
+	font-family: "Roboto", sans-serif;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.box {
+	display: flex;
+	background-color: DimGray;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 200px;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 4px 5px black;
+	transform: translateX(400%);
+	transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+	transform: translateX(-400%);
+}
+
+.item {
+	display: block;
+}
+
+.box.show {
+	transform: translateX(0);
+}

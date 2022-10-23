@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/home.css" />
+    <title>Switcheria! - Home</title>
+	<script type="text/javascript">
+		function submit() {
+			alert("Thanks for your submission!");
+		}
+	</script>
+  </head>
+  <body>
+	<header>
+		<p id="name">Switcheria!</p>
+		<p>by Alyssa Ayala</p>
+	</header>
+	<nav>
+      <a id="home" href="./home.html">Home</a>
+      <a id="sounds" href="./sounds.html">Sounds</a>
+      <a id="pictures" href="./pictures.html">Pictures</a>
+	  <a id="descriptions" href="./descriptions.html">Descriptions</a>
+	  <a id="forms" href="./store.html">Store</a>
+    </nav>
+  <div class="container">
+		<div class="split left">
+			<h1><i>Switcheria!</i></h1>
+			<h3>Keyboard switches are crucial for mechanical keyboards to work. Luckily, you've come to the right place! Learn about and</br> see what switches you can get!</br><u>Business Address:</u> 1234 Main Street Flushing, NY 11367</br><u>Business Hours:</u> Mon-Fri 9am-5pm</h3>
+		</div>
+		<div class="split right">
+			<h1>FAQ</h1>
+			<table style="table-layout:fixed;">
+				<tr>
+					<th>Question</th>
+					<th>Answer</th>
+				</tr>
+				<tr>
+					<td>Do I need to go in-person to make a purchase?</td>
+					<td>You can if you wish, but you can also order them</br> here on our website.</td>
+				</tr>
+				<tr>
+					<td>Can I try switches before buying them?</td>
+					<td>You can test switches at my store, or you may buy</br> our Test Set that includes five of each switch.</br>
+				</tr>
+				<tr>
+					<td>What's the refund policy?</td>
+					<td>If you're not satisfied with your purchase, you may</br> fill out the Refund Request Form (found in the</br> 'Store' page) within 30 days of delivery.</td>
+				</tr>
+			</table>
+			<h2>Still have questions? Contact me:</h2>
+			<form id="contact" action="javascript:submit()">
+				<label for="pname">Name:</label>
+				<input type="text" id="pname" name="contact" required>
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="contact" required>
+				<label for="phone">Phone number:</label>
+				<input type="text" id="phone" name="contact"></br>
+				<p>Is your query urgent?</p>
+				<label for="yes">Yes</label>
+				<input type="radio" id="yes" name="contact">
+				<label for="no">No</label>
+				<input type="radio" id="no" name="contact">
+				<p>You may contact me by:</p>
+				<label for="cemail">Email</label>
+				<input type="checkbox" id="email" name="contact">
+				<label for="ctext">Text</label>
+				<input type="checkbox" id="ctext" name="contact">
+				<label for="ccall">Phone call</label>
+				<input type="checkbox" id="ccall" name="contact"></br>
+				<label for="message">Message:</label>
+				<textarea id="message" name="contact" rows="5" cols="50" required></textarea></br>
+				<input type="submit" id="submit">
+			</form>
+		</div>
+	</div>
+	<script src="javascript/home.js"></script>
+  </body>
+</html>
